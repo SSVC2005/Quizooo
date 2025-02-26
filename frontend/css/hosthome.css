@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/bg.jpg') no-repeat center center/cover; /* Background */
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/* Header with Logout and Menu Icon */
+.header {
+    position: fixed; /* Fixed position to keep it on top */
+    top: 0;
+    width: 100%; /* Full width of the screen */
+    display: flex;
+    justify-content: space-between; /* Space between menu icon and logout button */
+    padding: 20px;
+    z-index: 100; /* Ensure it stays on top of other elements */
+}
+
+/* Custom Menu Icon */
+.menu-icon {
+    width: 30px; /* Adjust the size of the menu icon */
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Logout button */
+.logout-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sliding Menu */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 101; /* Ensure the menu stays on top when opened */
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+}
+
+/* Main content styling */
+.content {
+    margin-top: 100px; /* Push content below the fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Create New Quiz Button */
+.create-quiz-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.create-quiz-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,106 @@
+/* traditionalquiz.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent white overlay */
+}
+
+.quiz-box {
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly translucent white box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%; /* Occupy 80% of the viewport */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    flex-grow: 1; /* Ensures options take up the majority of space */
+}
+
+.option {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background-color: #eaeaea;
+}
+
+.option.selected {
+    border: 2px solid #3498db;
+}
+
+.timer {
+    font-size: 20px;
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Center the button */
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.submit-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}

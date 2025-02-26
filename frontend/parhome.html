@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divided Page</title>
+    <link rel="stylesheet" href="css/parhome.css">
+</head>
+<body>
+    <div class="header">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+        <div class="half left">
+            <div class="translucent-box">
+                This is a translucent box with rounded edges
+            </div>
+        </div>
+        <div class="half right">
+            <h1>Welcome, Participant!</h1>
+            <input type="text" id="quizCode" placeholder="Enter Quiz Code">
+            <button class="join-quiz-btn" onclick="joinQuiz()">Join Quiz</button>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <script src="js/parhome.js"></script>
+</body>
+</html>

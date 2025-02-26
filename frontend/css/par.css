@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header for Login Button */
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Transparent Login Button with White Text */
+.login-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.participant-container {
+    text-align: center;
+}
+
+#quizCode {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.join-quiz-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.join-quiz-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

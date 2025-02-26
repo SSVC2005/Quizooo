@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="css/quizcreation.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Create Quiz</h1>
+        <form id="createQuizForm">
+            <label for="quizName">Quiz Name:</label>
+            <input type="text" id="quizName" required>
+    
+            <label for="quizDescription">Description:</label>
+            <textarea id="quizDescription" rows="3"></textarea>
+    
+            <label for="quizMode">Quiz Mode:</label>
+            <select id="quizMode" required>
+                <option value="buzzer">Buzzer Mode</option>
+                <option value="traditional">Traditional Mode</option>
+            </select>
+    
+            <div id="questionsSection">
+                <h2>Questions</h2>
+                <div id="questionList"></div>
+            </div>
+            
+            <div class="buttonRow">
+                <button type="button" id="addQuestion">Add Question</button>
+                <button type="submit">Create Quiz</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <script src="js/quizcreation.js"></script>
+</body>
+</html>

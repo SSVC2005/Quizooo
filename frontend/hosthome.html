@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Home</title>
+    <link rel="stylesheet" href="css/hosthome.css"> <!-- Update path to CSS file -->
+</head>
+<body>
+    <div class="header">
+        <img src="assets/menuicon.png" class="menu-icon" alt="Menu" onclick="toggleMenu()"> <!-- Menu icon -->
+        <button class="logout-btn" onclick="logout()">Logout</button> <!-- Logout button remains on the right -->
+    </div>
+
+    <!-- Sliding menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <a href="dashboard.html">Dashboard</a> <!-- Link to Dashboard -->
+        <a href="#">My Quizzes</a>
+        <a href="javascript:void(0)" onclick="createQuiz()">Create New Quiz</a> <!-- Link to Create New Quiz -->
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="content">
+        <h1>Welcome, Host!</h1>
+        <button class="create-quiz-btn" onclick="createQuiz()">Create New Quiz</button> <!-- Create New Quiz Button -->
+    </div>
+    
+    <script src="js/hosthome.js"></script>
+</body>
+</html>

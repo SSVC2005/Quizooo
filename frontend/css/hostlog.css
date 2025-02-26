@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url('../assets/bg.jpg') no-repeat center center/cover;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px 50px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    gap: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.register-link, .login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.column {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.column .input-box {
+    flex: 1;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.input-box input, .input-box select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.input-box input::placeholder, .input-box select {
+    color: #ddd;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.gender-box {
+    margin-bottom: 25px;
+}
+
+.gender-box legend {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.gender-option {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.gender-option div {
+    display: flex;
+    align-items: center;
+}
+
+.gender-box fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gender input {
+    margin-right: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+}
+
+.gender-option label {
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: rgb(130, 106, 251);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(88, 56, 250);
+}
+
+@media (max-width: 500px) {
+    .column {
+        flex-direction: column;
+    }
+
+    .input-box i {
+        font-size: 16px;
+    }
+
+    .gender-option {
+        flex-direction: column;
+    }
+}
