@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Platform</title>
+    <title>Divided Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Quiz Platform</h1>
-        <div class="options">
-            <button onclick="navigateTo('host')">Host</button>
-            <button onclick="navigateTo('participant')">Participant</button>
+        <div class="half left">
+            <button class="left-btn">Left Button</button>
         </div>
-        <div id="participant-section" class="hidden">
-            <h2>Enter Session Code</h2>
-            <input type="text" id="sessionCode" placeholder="Enter code">
-            <button onclick="joinSession()">Join</button>
+        <div class="half right">
+            <button class="right-btn">Right Button</button>
         </div>
+        <div class="divider"></div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
