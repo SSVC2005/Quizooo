@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+.host-container {
+    text-align: center;
+}
+
+.create-session-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.create-session-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

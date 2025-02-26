@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Ensures the background covers the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-between; /* Ensures buttons are placed on opposite sides */
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounds off the button corners */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Adds a slight white overlay to make content more readable */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#questionsSection {
+    margin-top: 30px;
+}
+
+#questionList .question {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#questionList .removeQuestion {
+    background-color: #e74c3c;
+    border-radius: 20px; /* Rounds off the Remove button corners */
+}
+.options-container {
+    margin-top: 10px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.option-item input[type="radio"] {
+    margin-right: 5px; /* Reduced space between radio button and text */
+}
+
+input[type="text"], input[type="radio"], select {
+    margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+input[type="text"] {
+    flex-grow: 1; /* Ensures the text input adjusts size to fill available space */
+}
+
+.option-item input[type="radio"] {
+    margin-right: 5px; /* Minimal space between radio and text box */
+}
+
+.option-item label {
+    margin-right: 10px; /* Reduced margin for labels */
+}
+
+button {
+    border-radius: 20px; /* Rounds off button corners */
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+button.removeQuestion {
+    background-color: #f44336;
+    color: white;
+}
+
+button#addQuestion, button#submitQuiz {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
